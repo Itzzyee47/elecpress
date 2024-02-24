@@ -51,11 +51,11 @@ dev_dependencies:
   shimmer:
   date_time_picker:
   image_picker:
-  cloud_firestore:
-  firebase_core:
-  cloud_functions:
-  firebase_auth:
-  firebase_storage:
+  # cloud_firestore:
+  # firebase_core:
+  # cloud_functions:
+  # firebase_auth:
+  # firebase_storage:
   flutter_easyloading:
   shared_preferences: ^2.0.7
   sqflite: ^2.0.0+3
