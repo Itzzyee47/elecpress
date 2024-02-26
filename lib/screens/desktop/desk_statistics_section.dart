@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:charts_flutter/flutter.dart' as charts;
-import 'package:elecpress/screens/mobile/contestant.dart';
+import 'package:elecpress/screens/desktop/desk_contestant.dart';
 
 class StatisticsSection extends StatelessWidget {
   final List<Contestant> contestants;

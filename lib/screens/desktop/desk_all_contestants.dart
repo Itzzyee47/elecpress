@@ -1,7 +1,8 @@
 import 'dart:io';
 import 'package:flutter/material.dart';
 import 'package:path_provider/path_provider.dart';
-import 'package:elecpress/screens/mobile/contestant.dart';
+import 'package:elecpress/screens/desktop/desk_contestant.dart';
+import 'package:elecpress/screens/desktop/contestant_detail.dart';
 
 class AllContestantsPage extends StatefulWidget {
   final List<Contestant> contestants;
@@ -103,7 +104,7 @@ class _AllContestantsPageState extends State<AllContestantsPage> {
         ],
       ),
       body: Container(
-        padding: EdgeInsets.fromLTRB(160, 20, 130, 20),
+        padding: EdgeInsets.fromLTRB(260, 20, 230, 20),
         child: Column(
           children: [
             Row(
@@ -135,6 +136,15 @@ class _AllContestantsPageState extends State<AllContestantsPage> {
                   return ListTile(
                     title: Text('${index + 1}. ${contestant.name}'),
                     trailing: Text('Votes: ${contestant.votes}'),
+                    onTap: () {
+                      Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                          builder: (context) =>
+                              ContestantDetailsPage(contestant: contestant),
+                        ),
+                      );
+                    },
                   );
                 },
               ),

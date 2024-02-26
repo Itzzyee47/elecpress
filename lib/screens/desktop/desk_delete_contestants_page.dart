@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
-import 'package:elecpress/screens/mobile/contestant.dart';
+import 'package:elecpress/screens/desktop/desk_contestant.dart';
 
 class DeleteContestantsPage extends StatelessWidget {
   final List<Contestant> contestants;
