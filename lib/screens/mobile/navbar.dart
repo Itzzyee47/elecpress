@@ -13,6 +13,7 @@ class NavBar extends StatelessWidget {
       child: Row(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
         children: [
+          NavBarItem(title: 'Create Election', onTap: onNavItemTap),
           NavBarItem(title: 'Add Contestant', onTap: onNavItemTap),
           NavBarItem(title: 'Vote', onTap: onNavItemTap),
           NavBarItem(title: 'Statistics', onTap: onNavItemTap),

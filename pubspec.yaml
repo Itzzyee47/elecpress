@@ -42,6 +42,8 @@ dev_dependencies:
     sdk: flutter
   get:
   http:
+  uuid:
+  pie_chart:
   charts_flutter:
 #  loading:
   flutter_launcher_icons:
